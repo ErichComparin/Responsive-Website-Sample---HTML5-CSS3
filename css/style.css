@@ -1,0 +1,326 @@
+
+/* ---- GENERAL ---- */
+
+html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100%;
+    max-width: 1281px;
+    margin: 0 auto;
+    position: relative;
+    background: #F0FFFF;
+}
+
+.box_default {
+    padding: 12px;
+    position: relative;
+	vertical-align: top;
+}
+
+.title_default {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 0.5em 0;
+    text-transform: uppercase;
+}
+
+.paragraph_default {
+    text-align: justify;
+    margin: 0 0 0.3em;
+}
+
+/* ---- HEADER ---- */
+
+.header {
+    text-align: center;
+}
+
+.header-logo {
+    width: 50%;
+    padding: 0 10px 10px 10px;
+}
+
+.header-logo:hover {
+    transition: 0.3s;
+    transform: scale(1.1, 1.1);
+}
+
+.header-title{
+    font-size: 24px;
+    margin: 0 0 0.4em 0;
+    text-transform: uppercase;
+}
+
+/* Menu */
+.menu {
+    text-transform: uppercase;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 2px 6px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    transition: 0.4s;
+    color: rgb(0, 169, 236);
+    transform: scale(1.1, 1.1);
+}
+
+/* ---- MAIN ---- */
+
+.main {
+    padding: 0 0 12px 0;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 12px 0;
+    height: 240px;
+}
+
+.banner-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-bar {
+    position: absolute;
+    bottom: 0;
+    padding: 6px 1%;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 98%;
+}
+
+.banner-text {
+    text-align: justify;
+    color: lightgray;
+    margin: 0 0 4px 0;
+}
+
+.banner-button {
+    color: white;
+    background: rgba(0, 135, 189, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 3px;
+    outline:none;
+}
+
+.banner-button:hover {
+    transition: 0.5s;
+    background: rgba(0, 169, 236, 0.8);
+}
+
+/* Author */
+.author {
+    background: darkgray;
+    margin: 0 12px;
+    border-radius: 0.2rem;
+    box-shadow: 0px 0px 5px black;
+}
+
+.author-image {
+    float: left;
+    margin: 0 6px 6px 0;
+    width: 40%;
+}
+
+.author-image:hover {
+    transition: 0.4s;
+    transform: scale(1.05, 1.05);
+}
+
+.author-socialmedias {
+    clear: left;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.author-socialmedias img {
+    width: 12%;
+    margin: 0 1%;
+    max-width: 60px;
+}
+
+.author-socialmedias img:hover {
+    transition: 0.3s;
+    transform: scale(1.2, 1.2);
+}
+
+/* ---- FOOTER ---- */
+
+.footer {
+    vertical-align: top;
+    max-width: 1281px;
+}
+
+/* My last tweet */
+.mylasttweet {
+
+}
+
+.mylasttweet-datetime {
+    font-size: 14px;
+}
+
+/* My pictures */
+.mypictures {
+    text-align: center;
+}
+
+.mypictures img {
+    width: 23%;
+    margin: 0 1%;
+    max-width: 110px;
+}
+
+.mypictures img:hover {
+    transition: 0.3s;
+    transform: scale(1.1, 1.1);
+}
+
+/* My friends */
+
+.myfriends-item {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.myfriends-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.myfriends-item::before {
+    content: "⇝ "
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+*/
+@media (min-width: 768px) {
+  
+    /* ---- GENERAL ---- */
+    
+    .box_wrapper {
+        padding: 0 0 160px 0;
+    }
+
+    /* ---- HEADER ---- */
+
+    .header {
+        text-align: left;
+    }
+
+    .header-logo {
+        width: 25%;
+    }
+
+    .header-title{
+        width: 25%;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    /* Menu */
+    .menu {
+        position: absolute;
+        right: 12px;
+        top: calc(50% - 0.5em);
+        height: 100%;
+    }
+
+    .menu-item {
+        font-size: 24px;
+    }
+    
+    /* ---- MAIN ---- *
+    
+    //* Banner */
+    .banner {
+        height: 360px;
+    }
+
+    .banner-text {
+        display: inline-block;
+        margin: 0;
+        width: 88%;
+        padding: 1%;
+        vertical-align: middle;
+    }
+    
+    .banner-button {
+        display: inline-block;
+        width: 9%;
+        padding: 0.5%;
+        vertical-align: middle;
+    }
+
+    /* Article */
+    .article {
+        display: inline-block;
+        width: 56%;
+        margin: 1%;
+        padding: 1%;
+        box-sizing: border-box;
+    }
+
+    /* Author */
+    .author {
+        display: inline-block;
+        width: 36%;
+        margin: 1%;
+        padding: 1%;
+        box-sizing: border-box;
+    }
+
+    /* ---- FOOTER ---- */
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 0 0 10px 0;
+    }
+
+    /* My last tweet */
+    .mylasttweet, .mypictures, .myfriends {
+        display: inline-block;
+        width: 31%;
+        padding: 3px 1%;
+    }
+
+}
+
+/* 
+  ##Device = Desktops
+*/
+
+@media (min-width: 1281px) {
+
+    /* ---- HEADER ---- */
+
+    .header-logo {
+        width: 15%;
+        padding: 0 0 10px 30px;
+    }
+
+    .header-title{
+        width: calc(15% + 40px);
+        font-size: 32px;
+    }
+    
+}
